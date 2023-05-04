@@ -1,10 +1,6 @@
 import { db } from "../db/database.js";
 
-<<<<<<< Updated upstream
-export async function getGroup(user_id) {
-=======
 export async function getGroups(user_id) {
->>>>>>> Stashed changes
   return db
     .execute(
       `SELECT 

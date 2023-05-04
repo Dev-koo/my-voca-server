@@ -6,11 +6,7 @@ const AUTH_ERROR = { message: "Authorization Error" };
 
 export function isAuth(req, res, next) {
   const authHeader = req.header("Authorization");
-<<<<<<< Updated upstream
-
-=======
   // 2. 헤더에 없거나 bearer 로 시작하지 않으면 에러(401)과 에러메세지를 보낸다.
->>>>>>> Stashed changes
   if (!(authHeader && authHeader.startsWith("Bearer"))) {
     return res.status(401).json(AUTH_ERROR);
   }
